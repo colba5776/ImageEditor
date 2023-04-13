@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" prefHeight="525.0" prefWidth="626.0" spacing="10" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.imageeditornet.ResizeWindowController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <children>
+        <ImageView fx:id="resizeImageView" fitHeight="400" fitWidth="400" preserveRatio="true" />
+        <GridPane hgap="10" vgap="10">
+            <Label text="Width:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="widthField" style="-fx-background-radius: 17PX;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label text="Height:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="heightField" style="-fx-background-radius: 17PX;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="saveButton" style="-fx-background-color: white; -fx-background-radius: 17PX;" text="Save" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </children>
+</VBox>
